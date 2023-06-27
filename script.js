@@ -30,3 +30,13 @@ let mainFunction = async () => {
 
 mainFunction()
 
+//cookies
+
+let key = prompt("Enter Your Key")
+let value = prompt("Enter Your Value")
+
+console.log(document.cookie);
+document.cookie = "raorabi = 234"
+document.cookie = `${encodeURIComponent(key)} = ${encodeURIComponent(value)}`
+console.log(document.cookie);
+
